@@ -1,9 +1,11 @@
 (function (window) {
-var byeSpeaker = new object();
-var speakWord = "Good Bye";
-byeSpeaker.speak = function (name) {
-  console.log(speakWord + " " + name);
-};
-window.byeSpeaker = byeSpeaker;
+    var byeSpeaker = {};
+    var speakWord = "  Good Bye ";
+    byeSpeaker.speak = function (name) {
+        var wordsWrittenTwo = speakWord + name;
+        document.write(wordsWrittenTwo.fontsize(8));
+        console.log(wordsWrittenTwo);
+    }
 
+    window.byeSpeaker = byeSpeaker;
 })(window);
